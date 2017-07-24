@@ -10874,6 +10874,21 @@ jQuery.each( [ "top", "left" ], function( i, prop ) {
 		}
 	);
 } );
+//load masonary correctly
+( function( $ ) {
+var $container = $('#row');
+//layout Masonry again after all images have loaded
+$container.imagesLoaded( function() {
+$container.masonry();
+});})( jQuery );
+
+
+
+
+
+
+
+
 
 
 // Create innerHeight, innerWidth, height, width, outerHeight and outerWidth methods
