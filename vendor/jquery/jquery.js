@@ -3753,24 +3753,9 @@ jQuery( function() {
 
 
 //find me later
-(function() {
+//(function() {
 
-  var $boxes = $('.portfolio-item');
-  $boxes.hide();
-
-  var $container = $('#row');
-  $container.imagesLoaded( function() {
-    $boxes.fadeIn();
-
-    $container.masonry({
-        itemSelector : '.portfolio-item',
-        columnwidth: 300,
-        gutter: 20,
-        isFitWidth: true,
-        isAnimated: !Modernizr.csstransitions
-    });
-  });
-});
+//});
 
 
 
@@ -3778,7 +3763,21 @@ jQuery( function() {
 
 ( function() {
 	var div = document.createElement( "div" );
+	var $boxes = $('.portfolio-item');
+	$boxes.hide();
 
+	var $container = $('#row');
+	$container.imagesLoaded( function() {
+		$boxes.fadeIn();
+
+		$container.masonry({
+				itemSelector : '.portfolio-item',
+				columnwidth: 300,
+				gutter: 20,
+				isFitWidth: true,
+				isAnimated: !Modernizr.csstransitions
+		});
+	});
 	// Support: IE<9
 	support.deleteExpando = true;
 	try {
