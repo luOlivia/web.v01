@@ -16,7 +16,7 @@
 
     <!-- Theme CSS -->
     <!--<link href="css/freelancer.min.css" rel="stylesheet">-->
-    <link href="css/freelancercode.css" rel="stylesheet">
+    <link href="css/freelancerart.css" rel="stylesheet">
 
     <!-- Custom Fonts -->
     <link href="vendor/font-awesome/css/font-awesome.min.css" rel="stylesheet" type="text/css">
@@ -84,7 +84,7 @@
                     <br></br>
                 </div>
             </div>
-            <div class="row">
+            <div class="row" data-masonry='{ "itemSelector": ".portfolio-item", "columnWidth": 10 }'>
                 <div class="col-sm-4 portfolio-item">
                     <a href="#portfolioModal1" class="portfolio-link" data-toggle="modal">
                         <div class="caption">
@@ -175,7 +175,31 @@
             </div>
         </div>
     </section>
-
+    <section class="success" id="about">
+        <div class="container">
+            <div class="row">
+                <div class="col-lg-12 text-center">
+                    <h2>My Inspiration</h2>
+                    <hr class="star-light">
+                </div>
+            </div>
+            <div class="row">
+                <div class="col-lg-4 col-lg-offset-2">
+                    <p> Olivia Lu is a senior at Thomas Jefferson High School for Science and Technology (TJHSST). </p>
+                    <p>At the age of 17, she's pulled a few too many all-nighters at hackathons, delved into the art of Artificial Intelligence, and is constantly fidgeting with pieces of code </p>
+                    <p>As an artist, she's been apart of a year-long exhibit at the National Building Museum and has worked as a studio assistant at the Hirshhorn.</p>
+                </div>
+                <div class="col-lg-4">
+                    <p>Whether you're a student looking to showcase your work, a professional looking to attract clients, or a graphic artist looking to share your projects, this template is the perfect starting point!</p>
+                </div>
+                <div class="col-lg-8 col-lg-offset-2 text-center">
+                    <a href="https://www.instagram.com/art.of.olivia/" class="btn btn-lg btn-outline">
+                        <i class="fa fa-instagram"></i>
+                    </a>
+                </div>
+            </div>
+        </div>
+    </section>
     <!-- Footer -->
     <footer class="text-center">
         <div class="footer-above">
@@ -208,7 +232,7 @@
                     </div>
                     <div class="footer-col col-md-4">
                         <h3>About Olivia</h3>
-                        <p>Olivia Lu is Washington DC native and works as a coder and a designer.</p>
+                        <p>Olivia Lu is Washington DC native and works as a developer and a designer.</p>
                     </div>
                 </div>
             </div>
@@ -512,6 +536,9 @@
 
     <!-- Theme JavaScript -->
     <script src="js/freelancer.min.js"></script>
+
+    <!-- For masonary js -->
+    <script src="js/masonry.pkgd.min.js"></script>
 
  </body>
  </html>
