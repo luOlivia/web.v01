@@ -3744,6 +3744,38 @@ jQuery( function() {
 } );
 
 
+
+
+
+
+
+
+
+
+//find me later
+$(document).ready(function() {
+
+  var $boxes = $('.box');
+  $boxes.hide();
+
+  var $container = $('#post-area');
+  $container.imagesLoaded( function() {
+    $boxes.fadeIn();
+
+    $container.masonry({
+        itemSelector : '.box',
+        columnwidth: 300,
+        gutter: 20,
+        isFitWidth: true,
+        isAnimated: !Modernizr.csstransitions
+    });
+  });
+});
+
+
+
+
+
 ( function() {
 	var div = document.createElement( "div" );
 
@@ -10875,13 +10907,6 @@ jQuery.each( [ "top", "left" ], function( i, prop ) {
 	);
 } );
 //load masonary correctly
-( function( $ ) {
-var $container = $('#.portfolio-item');
-//layout Masonry again after all images have loaded
-$container.imagesLoaded( function() {
-$container.masonry();
-});})( jQuery );
-
 
 
 
