@@ -3753,7 +3753,7 @@ jQuery( function() {
 
 
 //find me later
-$(document).ready(function() {
+(function() {
 
   var $boxes = $('.box');
   $boxes.hide();
