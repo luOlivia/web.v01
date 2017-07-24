@@ -538,7 +538,21 @@
 
     <!-- jQuery -->
     <!--<script src="vendor/jquery/jquery.min.js"></script>-->
-    <script src="vendor/jquery/jquery.js"></script>
+    <script src="vendor/jquery/jquery.js">
+    $(window).load(function()
+  {
+      $('#row').masonry({
+           itemSelector : '.portfolio-item',
+           columnWidth : 10,
+           isAnimated: true,
+           animationOptions: {
+                duration: 700,
+                easing: 'linear',
+                queue: false
+           }
+      });
+  });
+    </script>
     <script src="vendor/jquery/imagesloaded.pkgd.min.js"></script>
 
     <!-- Bootstrap Core JavaScript -->

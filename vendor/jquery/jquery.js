@@ -3689,6 +3689,7 @@ jQuery.ready.promise = function( obj ) {
 jQuery.ready.promise();
 
 //find me later
+/*
 (function() {
 
   var $boxes = $('.portfolio-item');
@@ -3706,7 +3707,7 @@ jQuery.ready.promise();
         isAnimated: !Modernizr.csstransitions
     });
   });
-});
+});*/
 
 
 
