@@ -3755,15 +3755,15 @@ jQuery( function() {
 //find me later
 (function() {
 
-  var $boxes = $('.box');
+  var $boxes = $('.portfolio-item');
   $boxes.hide();
 
-  var $container = $('#post-area');
+  var $container = $('#row');
   $container.imagesLoaded( function() {
     $boxes.fadeIn();
 
     $container.masonry({
-        itemSelector : '.box',
+        itemSelector : '.portfolio-item',
         columnwidth: 300,
         gutter: 20,
         isFitWidth: true,
