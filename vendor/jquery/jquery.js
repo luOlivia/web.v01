@@ -10876,7 +10876,7 @@ jQuery.each( [ "top", "left" ], function( i, prop ) {
 } );
 //load masonary correctly
 ( function( $ ) {
-var $container = $('#row');
+var $container = $('#.portfolio-item');
 //layout Masonry again after all images have loaded
 $container.imagesLoaded( function() {
 $container.masonry();
