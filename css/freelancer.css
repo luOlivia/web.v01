@@ -71,6 +71,10 @@ hr.star-primary:after {
 header {
   text-align: center;
   background-image: url("look2black.jpg");
+  background-attachment: fixed;
+  background-position: center;
+  background-repeat-x: no-repeat;
+  background-repeat-y: no-repeat;
   background-size: 1600px 1202px;
   color: white;
 }
@@ -194,6 +198,10 @@ section h2 {
 section.success {
   /*background: #eda550;*/
   background-image: url("look1cropwhite.png");
+  background-attachment: relative;
+  background-position: top;
+  background-repeat-x: no-repeat;
+  background-repeat-y: no-repeat;
   background-size: 1600px 1202px;
   color: #000000;
   text-align: left;

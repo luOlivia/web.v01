@@ -192,7 +192,7 @@ section h2 {
 
 }
 section.success {
-  background: #ffc785;
+  background: #ffedd8;
   /*background-image: url("look1cropwhite.png");*/
   background-size: 1600px 1202px;
   color: #000000;
@@ -310,6 +310,9 @@ section.success {
   color: #eda550;
 }
 form .js-masonry:first-child .floating-label-form-group {
+  border-top: 1px solid #eeeeee;
+}
+form .row:first-child .floating-label-form-group {
   border-top: 1px solid #eeeeee;
 }
 footer {
