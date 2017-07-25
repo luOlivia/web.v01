@@ -84,7 +84,7 @@
                     <br></br>
                 </div>
             </div>
-            <div class="row" data-masonry='{ "itemSelector": ".portfolio-item", "columnWidth": 10 }'>
+            <div class="row"> <!--data-masonry='{ "itemSelector": ".portfolio-item", "columnWidth": 10 }'-->
                 <div class="col-sm-4 portfolio-item">
                     <a href="#portfolioModal1" class="portfolio-link" data-toggle="modal">
                         <div class="caption">
@@ -539,19 +539,19 @@
     <!-- jQuery -->
     <!--<script src="vendor/jquery/jquery.min.js"></script>-->
     <script src="vendor/jquery/jquery.js">
-    $(window).load(function()
-  {
-      $('#row').masonry({
-           itemSelector : '.portfolio-item',
-           columnWidth : 10,
-           isAnimated: true,
-           animationOptions: {
-                duration: 700,
-                easing: 'linear',
-                queue: false
-           }
-      });
-  });
+    ( function( $ ) {
+      var $container = $('#row');
+      //layout Masonry again after all images have loaded
+      $container.imagesLoaded
+      ( function() {
+        $container.masonry();
+        {
+          columnWidth: 10,
+        }
+        }
+      });})
+      //( jQuery );
+
     </script>
     <script src="vendor/jquery/imagesloaded.pkgd.min.js"></script>
 
