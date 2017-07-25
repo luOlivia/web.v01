@@ -1,10 +1,18 @@
-$(document).ready( function() {
+$(document).ready(function() {
 
-  var $container = $('#row').imagesLoaded( function() {
+  //var $boxes = $('.portfolio-item');
+  //$boxes.hide();
+
+  var $container = $('#row');
+  $container.imagesLoaded( function() {
+    $boxes.fadeIn();
+
     $container.masonry({
-      columnWidth: 10,
-      itemSelector: '.portfolio-item'
+        itemSelector : '.portfolio-item',
+        columnwidth: 10,
+        //gutter: 20,
+        //isFitWidth: true,
+        //isAnimated: true,
     });
   });
-
 });
