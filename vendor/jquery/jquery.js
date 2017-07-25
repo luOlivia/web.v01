@@ -10894,14 +10894,6 @@ jQuery.each( [ "top", "left" ], function( i, prop ) {
 		}
 	);
 } );
-//load masonary correctly
-
-
-
-
-
-
-
 
 
 // Create innerHeight, innerWidth, height, width, outerHeight and outerWidth methods
