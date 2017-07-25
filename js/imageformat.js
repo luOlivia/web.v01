@@ -18,9 +18,9 @@
 });*/
 $(document).ready( function() {
 
-  var $container = $('#js-masonry').imagesLoaded( function() {
+  var $container = $('.js-masonry').imagesLoaded( function() {
     $container.masonry({
-      columnWidth: 320,
+      columnWidth: 10,
       itemSelector: '.portfolio-item'
     });
   });
